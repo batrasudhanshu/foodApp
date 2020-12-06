@@ -8,22 +8,27 @@ class HomeTopInfo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: <Widget>[
-          Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text("What would ", style: textStyle),
-                Text(
-                  "you like to eat ?",
-                  style: textStyle,
-                )
-              ]),
-          Icon(
-            Icons.notifications,
-            size: 50.0,
-          ),
-        ]);
+    return Container(
+      margin: EdgeInsets.only(
+        bottom: 20.0,
+      ),
+      child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text("What would ", style: textStyle),
+                  Text(
+                    "you like to eat ?",
+                    style: textStyle,
+                  )
+                ]),
+            Icon(
+              Icons.notifications,
+              size: 50.0,
+            ),
+          ]),
+    );
   }
 }
